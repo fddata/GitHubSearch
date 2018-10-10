@@ -4,37 +4,69 @@
     <meta charset="utf-8">
     <title>GitHub API Searcher</title>
     <script src="js/bundle.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
 
 
   <body>
-    <h1> Use the form to construct your query </h1>
 
+    <nav class="navbar navbar-default">
 
-    <div id="form-view">
+<div class="row">
 
-      <form id="form" method="get" name="form">
+<div class="col-sm-4">
+  <h2>GitHub Repository Browser</h2>
+</div>
+<div class="col-sm-8">
+  <div id="form-view">
 
-        <label for="search_text">Search Text:</label>
-        <input type="text" id="search_text">
+    <form class="form-row" id="form" method="get" name="form">
+
+        <label for="search_text">Search Phrase:</label>
+        <input class="form-control" type="text" id="search_text">
 
         <label for="language">Language:</label>
-        <input type="text" id="language">
+        <input class="form-control" type="text" id="language">
 
-        <select id="order">
+
+        <label for="sort">Sort By:</label>
+        <select class="form-control" id="sort">
+          <option value="comments">No. of Comments</option>
+          <option value="created">Date Created</option>
+          <option value="updated">Date Updated</option>
+        </select>
+
+        <label for="order">Order:</label>
+        <select  class="form-control" id="order">
           <option value="desc">Descending</option>
           <option value="asc">Ascending</option>
         </select>
-
+        <br>
         <button type="submit" id="form">Submit Request</button>
-      </form>
+
+    </form>
+    </div>
+  </div>
+
+
+</div>
+</nav>
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-sm-1"> </div>
+    <div class="col-sm-10", id="results-view">
+
+
     </div>
 
-
-    <div id="results-view">
-
-
-    </div>
-
+    <div class="col-sm-1"> </div>
+</div>
   </body>
 </html>

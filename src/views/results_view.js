@@ -25,9 +25,9 @@ ResultsView.prototype.render = function (results) {
 
 ResultsView.prototype.createHeader = function(results){
   const header = document.createElement('header');
-  const h2 = document.createElement('h2');
-  h2.textContent = `Total Number of results: ${results.total_count}`;
-  header.appendChild(h2);
+  const h3 = document.createElement('h3');
+  h3.textContent = `Total Number of results: ${results.total_count}`;
+  header.appendChild(h3);
   return header;
 };
 
@@ -35,7 +35,8 @@ ResultsView.prototype.createHeader = function(results){
 ResultsView.prototype.populateTable = function (results) {
   const resultsTable = document.createElement("table");
   resultsTable.setAttribute("id", "results-table");
-  resultsTable.innerHTML="<table><tr><th>Result Number</th><th>Repository URL</th><th>Description</th></tr></table>";
+  resultsTable.setAttribute("class", "table");
+  resultsTable.innerHTML='<table><tr><th>Result Number</th><th>Repository URL</th><th>Description</th></tr></table>';
   for(var i = 0; i < results.items.length; i++) {
     var row = resultsTable.insertRow(-1);
     var cell1 = row.insertCell(0);
