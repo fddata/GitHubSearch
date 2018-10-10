@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>GitHub API Searcher</title>
-    <script src="js/app.js"></script>
+    <script src="js/bundle.js"></script>
   </head>
 
 
@@ -11,8 +11,8 @@
     <h1> Use the form to construct your query </h1>
 
 
-    <div id="form-container">
-  
+    <div id="form-view">
+
       <form id="form" method="get" name="form">
 
         <label for="search_text">Search Text:</label>
@@ -23,6 +23,11 @@
 
         <button type="submit" id="form">Submit Request</button>
       </form>
+    </div>
+
+
+    <div id="results-view">
+
     </div>
 
   </body>
