@@ -16,7 +16,7 @@ FormView.prototype.bindEvents = function () {
       const language = form.language.value;
       const order = form.order.value;
 
-      const url = `https://api.github.com/search/repositories?q=${search_text}+language:${language}&order=${order}`;
+      const url = `https://api.github.com/search/repositories?q=${search_text}+language:${language}&order=${order}&per_page=100`;
 
       const request = new Request(url);
         request.get()
