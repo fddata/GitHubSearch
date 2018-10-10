@@ -10,24 +10,20 @@
   <body>
     <h1> Use the form to construct your query </h1>
 
-    <form id="query-form" method="get" name="form">
-    <label>Language</label>
-    <select>
-      <option value="ruby">Ruby</option>
-      <option value="python">Python</option>
-      <option value="java">Java</option>
-      <option value="javascript">JavaScript</option>
-    </select>
 
-    <label for="query-text">Search Text</label>
-    <input type="text" name="query-text">
+    <div id="form-container">
+  
+      <form id="form" method="get" name="form">
 
-    <button type="submit" id="query-submit">Submit Request</button>
+        <label for="search_text">Search Text:</label>
+        <input type="text" id="search_text">
 
+        <label for="language">Language:</label>
+        <input type="text" id="language">
 
-
-  </form>
-
+        <button type="submit" id="form">Submit Request</button>
+      </form>
+    </div>
 
   </body>
 </html>
