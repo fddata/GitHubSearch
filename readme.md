@@ -6,14 +6,14 @@ A simple front end to browse GitHub repositories via the search API.
 
 Clone/download the repository.
 
-In the root folder, in the terminal run:
+Whilst in the root folder, install then run Wepback by entering the follwing commands in the terminal:
 
 ```console
 npm i 
 
 npm run build 
 ```
-To install then run Wepback.
+
 
 Following this, open `public/index.html` to launch the app.
 
