@@ -1,6 +1,6 @@
 ## GitHub Repository Browser
 
-A simple front end to search GitHub via the search API.
+A simple front end to browse GitHub repositories via the search API.
 
 ### How to install:
 
@@ -9,14 +9,13 @@ Clone/download the repository.
 In the root folder, in the terminal run:
 
 ```console
-#install webpack
 npm i 
 
-#run webpack
 npm run build 
 ```
+To install then run Wepback.
 
-Then open public/index.html to launch the app.
+Following this, open `public/index.html` to launch the app.
 
 ### Overview
 
